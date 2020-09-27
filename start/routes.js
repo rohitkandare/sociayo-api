@@ -24,3 +24,5 @@ Route.get('/hello',function({req,response}){
 })
 Route.post('/api/singup/','AuthController.singup')
 Route.post('/api/login/','AuthController.login')
+
+Route.post('/api/createPost/','PostController.createPost')
