@@ -9,7 +9,7 @@ class PostSchema extends Schema {
       table.increments()
       table.integer('uid')
       table.string('file').notNullable()
-      table.string('description')
+      table.string('post_description')
       table.string('like').defaultTo(0) 
       table.string('dislike').defaultTo(0) 
       table.timestamps()

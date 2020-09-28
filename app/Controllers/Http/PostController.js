@@ -26,7 +26,7 @@ class PostController {
 *         in: formData
 *         required: true
 *         type : file
-*       - name: description
+*       - name: post_description
 *         description: Enter a discription.
 *         in: formData
 *         required: true
@@ -60,7 +60,7 @@ class PostController {
         var t = "file:///"+t
         post.uid = data.uid
         post.file = t
-        post.description = data.discription
+        post.des= data.post_description
         await post.save()
            response.send({
             messsage: 'successfully created',
