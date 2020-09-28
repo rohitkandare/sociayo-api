@@ -60,7 +60,7 @@ class PostController {
         var t = "file:///"+t
         post.uid = data.uid
         post.file = t
-        post.des= data.post_description
+        post.post_description= data.post_description
         await post.save()
            response.send({
             messsage: 'successfully created',
